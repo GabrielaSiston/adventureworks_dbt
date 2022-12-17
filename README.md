@@ -1,8 +1,12 @@
-Welcome to your new dbt project!
+Welcome to my dbt project!
 
-### Using the starter project
+This project is a transformation of data from AdventureWorks company (a sample provided by Microsoft), using the tool DBT to model and answer business questions.
+The files contain modeled data to feed a data viz tool, for this specific project, the data viz tool used was Data Studio.
 
-Try running the following commands:
+### Running the project
+- Go to aw_desafio folder
+
+### Now try running the following commands:
 - dbt run
 - dbt test
 
