@@ -1,0 +1,31 @@
+version: 2
+
+models:
+  - name: dim_customers
+    columns:
+      - name: customerid
+        description: The primary key of customers 
+        tests:
+          - unique
+          - not_null  
+      - name: businessentityid
+        description: 	Primary key for Person records.
+        tests:
+          - unique 
+          - not_null 
+        warn_if: "!=0"
+      - name: firstname
+        description: first name of the person
+        tests:
+          - not_null
+        warn_if: "!=0"
+      - name: middlename
+        description: middlename name of the person
+        tests:
+          - not_null
+        warn_if: "!=0"
+      - name: lastname
+        description: last name of the person
+        tests:
+          - not_null
+        warn_if: "!=0"

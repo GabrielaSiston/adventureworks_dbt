@@ -1,0 +1,19 @@
+version: 2
+
+sources: 
+  - name: aw_desafio
+    database: blissful-shore-363521
+    schema: adw_etl 
+    tables:
+      - name: product
+      - name: customer
+      - name: person
+      - name: salesreason
+      - name: salesorderheader
+      - name: salesorderheadersalesreason
+      - name: salesorderdetail
+      - name: creditcard
+      - name: stateprovince
+      - name: countryregion
+      - name: address
+    

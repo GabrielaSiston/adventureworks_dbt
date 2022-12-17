@@ -1,0 +1,4 @@
+venv
+aw_desafio/target/
+aw_desafio/dbt_packages/
+aw_desafio/logs/

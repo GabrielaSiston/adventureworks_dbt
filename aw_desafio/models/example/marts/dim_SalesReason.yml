@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: dim_SalesReason
+    columns:
+      - name: salesreasonid
+        description: 	Primary key for SalesReason records
+        tests:
+          - unique
+          - not_null
+      
+      - name: name
+        description: Sales reason description.
+        tests:
+          - not_null

@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: dim_Products
+    columns:
+      - name: productid
+        description: Primary key for Product records
+        tests:
+          - unique
+          - not_null  
+      - name: name 
+        description: Name of the product
+        tests:
+          - not_null 
+      - name: listprice
+        description: Selling price
+        tests:
+          - not_null
+      - name: standardcost
+        description: Standard cost of the product
+        tests:
+          - not_null

@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  - name: dim_Locations
+    columns:
+      - name: stateprovinceid
+        description: 	Primary key for StateProvince records
+        tests:
+          - unique
+          - not_null 
+      - name: territoryid
+        description: ID of the territory in which the state or province is located
+        tests:
+          - unique
+          - not_null
+      - name: name 
+        description: State or province description.
+        tests:
+          - not_null
+      - name: countryregioncode 
+        description: ISO standard country or region code
+        tests:
+        - not_null
+      

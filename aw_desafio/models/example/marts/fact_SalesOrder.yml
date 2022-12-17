@@ -1,0 +1,53 @@
+version: 2
+
+models:
+  - name: fct_SalesOrdeer
+    columns:
+      - name: salesorderid
+        description: The primary key of the sale
+        tests:
+          - unique
+          - not_null
+      
+      - name: product_id
+        description: Primary key of the product
+        tests:
+          - unique
+          - not_null
+      - name: orderqty
+        description: Quantity ordered per product
+        tests:
+          - not_null
+      - name: unitprice
+        description: Selling price of a single product
+        tests:
+          - not_null
+      - name: customerid
+        description: Primary key of customers 
+        tests:
+          - unique
+          - not_null
+      - name: territoryid
+        description: ID of the territory in which the state or province is located
+        tests:
+          - unique
+          - not_null
+      - name: orderdate
+        description: 	Dates the sales order was created 
+        tests:
+          - not_null
+      - name: creditcardid
+        description: 	Credit card identification number
+        tests:
+          - unique
+          - not_null
+      - name: status_de_venda
+        description: Order current status
+        tests:
+          - not_null
+      - name: cardtype
+        description: 	Credit card name
+        tests:
+          - not_null
+        
+      
